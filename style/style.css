@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header, Painel primeiro, Biblioteca do conhecimento*/
+
+header {
+    width: 80%;
+    height: 90px;
+    background-color: rgb(84, 84, 194);
+    margin: auto;
+    align-items: center;
+}
+
+#titulo-logo {
+    color: white;
+    margin-top: 30px;
+    display: inline-block;
+    float: left;
+}
+
+#logo {
+    border-radius: 90px;
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo:hover {
+    border: solid 2px black;
+}
+
+div#color-body > div {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+div#color-body > div.white {
+    background-color: white;
+}
+
+div#color-body > div.black {
+    background-color: black;
+}
+
+nav > ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+ul > li {
+    margin: 20px;
+    padding: 5px;
+    float: right;
+}
+
+ul > li:hover {
+    border-bottom: solid 2px white;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li > a {
+    color: white;
+}
+
+/*Header, Painel primeiro, Biblioteca do conhecimento*/
+/* Painel dos posts */
+
+h2 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+main {
+    margin-left: 4vmax;
+    margin-right: 4vmax;
+    padding: 5vmax;
+    height: 560px;
+}
+
+div#main-post {
+    width: 500px;
+    height: 500px;
+    background-image: url(../pags/historia-rock/assets/img-principal.jpg);
+    background-size: cover;
+    float: left;
+    margin: 7px;
+}
+
+a#link-post-main, a.link-posts, div#logo > a {
+    text-decoration: none;
+}
+
+#link-post-main {
+    display: block;
+}
+
+.darken:hover {
+    background-color: rgb(0,0,0,0.2);
+}
+
+#main-post-text {
+    color: rgba(255,255,255,0.5);
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+    margin: 0;
+}
+
+div.posts {
+    width: 243px;
+    height: 243px;
+    background-color: red;
+    float: left;
+    margin: 7px;
+}
+
+p.main-post-text {
+    line-height: 243px;
+    text-align: center;
+    margin: 0;
+}
+
+main#conteudo {
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img[src*="img-principal"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+    width: 30vmax;
+}
+
+/* Painel do posts final da linha*/
+
+/*Rádape*/
+
+footer {
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    background-color:rgb(84, 84, 194);
+}
+
+footer > p {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    
+}
+
+/*Rádape fim*/
+/*Outros*/
+/*Outros*/
+
+/*Adaptações*/
+
+@media screen and (max-width: 2267px) {
+    section {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1123px) {
+    header {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 1273px) {
+    main {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    main {
+        height: 1200px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 788px) {
+    footer > p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 669px) {
+    /*Header*/
+    h1#titulo-logo {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    /*Header fim*/
+}
+
+@media screen and (max-width: 970px) {
+    main {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    /*Principal*/
+
+    div#main-post {
+        width: 250px;
+        height: 250px;
+    }
+
+    p#main-post-text {
+        line-height: 250px;
+        font-size: 20px;
+    }
+    /*Principal fim*/
+}
+
+@media screen and (max-width: 609px) {
+    main {
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    header {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    header {
+        height: 320px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > ul {
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 374px) {
+    header {
+        height: 340px;
+    }
+
+    h1#titulo-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
